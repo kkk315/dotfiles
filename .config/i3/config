@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -48,6 +48,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
+
 tiling_drag modifier titlebar
 
 # start a terminal
@@ -220,3 +221,23 @@ exec --no-startup-id picom --config ~/.config/picom.conf -b
 exec --no-startup-id h
 exec --no-startup-id feh --no-fehbg --bg-fill '$HOME/.images/wallpaper/wall.jpg
 exec --no-startup-id conky -d
+default_border normal
+default_border pixel 2
+
+workspace 1 output HDMI-1-0
+workspace 2 output HDMI-1-0
+workspace 3 output HDMI-1-0
+workspace 4 output HDMI-1-0
+workspace 5 output HDMI-1-0
+workspace 6 output HDMI-1-0
+workspace 7 output HDMI-1-0
+workspace 8 output HDMI-1-0
+workspace 9 output eDP-1
+
+
+gaps inner 10px
+
+for_window [all] title_window_icon on
+for_window [all] title_window_icon padding 10px
+
+
