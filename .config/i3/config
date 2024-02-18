@@ -212,8 +212,7 @@ bindsym $mod+g exec /usr/bin/google-chrome-stable
 exec i3-msg workspace 1
 
 ## wallpaper
-exec --no-startup-id feh --no-fehbg --bg-scale '/home/arch/wall.jpg'
-
+exec --no-startup-id fehbg
 ## picom (window opacity)
 exec --no-startup-id picom --config ~/.config/picom.conf -b
 
