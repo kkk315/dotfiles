@@ -116,3 +116,6 @@ alias ll="ls -la"
 alias re="source ~/.zshrc"
 alias h="bluetoothctl connect 43:EE:4E:E3:AF:10"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
